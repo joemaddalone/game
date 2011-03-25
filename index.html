@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+    Welcome to the source code!
+    An HTML5 + CSS3 + Canvas + JS Experiment
+
+    Created by Joe Maddalone
+    http://www.insert-title.com	<< work
+    http://www.joemaddalone.com	<< social
+    http://www.htmlstack.com	<< play
+
+    * No dependencies (yes, we have no jQuery)
+    * Supported in IE9, Firefox, Chrome, Safari
+    * Downloadable source code coming soon, otherwise just follow the html/js
+    -->
+    <meta charset="utf-8">
+    <title>HTML5 Numbers Game</title>
+    <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <link rel="stylesheet" type="text/css" href="css/triangle.css" />
+</head>
+<body>
+	<div id="share" style="position:absolute;top:0px;right:0px;padding:3px">
+		<a href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-via="joemaddalone">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+		<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.htmlstack.com%2Ftriangle&amp;layout=button_count&amp;show_faces=false&amp;width=50&amp;action=like&amp;font&amp;colorscheme=light&amp;height=21" style="border:none; overflow:hidden; width:50px; height:21px;"></iframe>
+		<br />
+		<a style="text-decoration:none;color:#000" href="http://www.htmlstack.com">back to htmlstack</a>
+	</div>
+	<div id="results"></div>
+	<div id="timer" style="display:none">00</div>
+	<section id="content">
+        <div id="lvl" class="slideOut"></div>
+        <div id="ans" class="slideOut"></div>
+        <div id="cur" class="slideOut">Your Total: 0</div>
+        <div id="rules" class="slideOut">
+	        <img id="hideRules" src="images/close.png" />
+            <h1>The Rules</h1>
+            <p>#1: One selection on each row</p>
+            <p>#2: Each selection must be adjacent to the next</p>
+            <p>#3: Your "Current Total" must equal "The Answer"</p>
+            <p>#4: You must beat the timer on the right</p>
+            <p>written by: <a href="http://www.twitter.com/joemaddalone">@joemaddalone</a></p>
+        </div>
+        <div id="getRules" class="slideOut">Rules</div>
+        <div id="panel">
+                <div id="how" onClick="start(2)"> <img src="images/how.jpg" style="border:2px solid #000" /></div>
+        </div>
+	</section>
+    <audio id="click" preload="auto"><source src="sounds/click.ogg" type="audio/ogg" /><source src="sounds/click.mp3" /></audio>
+	<audio id="win" preload="auto"><source src="sounds/win.ogg" type="audio/ogg" /><source src="sounds/win.mp3" /></audio>
+	<audio id="lose" preload="auto"><source src="sounds/lose.ogg" type="audio/ogg" /><source src="sounds/lose.mp3" /></audio>
+	<script src="js/load.js"></script>
+</body>
+</html>
+

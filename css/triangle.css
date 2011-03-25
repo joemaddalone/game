@@ -1,0 +1,242 @@
+@import url('http://fonts.googleapis.com/css?family=Kreon:regular,bold');
+body{margin:0px;padding:0px;background-image:url(../images/bg.jpg);}
+#content{display:block;min-height:500px;min-width:650px;position:relative;padding:15px;}
+#how{text-align:center}
+.piece:hover,#how:hover{color:#58a;cursor:pointer;}
+.pieceSelected:hover{color:#FF0;cursor:pointer;}
+.piece,.pieceSelected{}
+.val {
+	color:#fff;
+	font-size:18px;
+	line-height:1em;
+	-moz-transition:all .2s ease-out;
+	-webkit-transition:all .2s ease-in-out;
+	-ms-transition:all .2s ease-in-out;
+	-o-transition:all .2s ease-in-out;
+	border-radius:100%;
+}
+
+.val:hover{
+	-webkit-box-shadow:#000 0px 0px 2px;
+	-moz-box-shadow:#000  0px 0px 2px;
+	}
+
+/* levels 1-10 */
+.n0,.n1,.n2,.n3,.n4,.n5,.n6,.n7,.n8,.n9,.n10{
+	background-image:url(../images/numbers.png);
+	width:50px;
+	height:50px;
+	display:inline-block;
+	margin:2px 5px;
+	padding:0;
+}
+.piece .val.n0{background-position:0 0;}
+.piece .val.n1{background-position:-50px 0;}
+.piece .val.n2{background-position:-100px 0;}
+.piece .val.n3{background-position:-150px 0;}
+.piece .val.n4{background-position:-200px 0;}
+.piece .val.n5{background-position:-250px 0;}
+.piece .val.n6{background-position:-300px 0;}
+.piece .val.n7{background-position:-350px 0;}
+.piece .val.n8{background-position:-400px 0;}
+.piece .val.n9{background-position:-450px 0;}
+.piece .val.n10{background-position:-500px 0;}
+.pieceSelected .val.n0{background-position:0 -50px;}
+.pieceSelected .val.n1{background-position:-50px -50px;}
+.pieceSelected .val.n2{background-position:-100px -50px;}
+.pieceSelected .val.n3{background-position:-150px -50px;}
+.pieceSelected .val.n4{background-position:-200px -50px;}
+.pieceSelected .val.n5{background-position:-250px -50px;}
+.pieceSelected .val.n6{background-position:-300px -50px;}
+.pieceSelected .val.n7{background-position:-350px -50px;}
+.pieceSelected .val.n8{background-position:-400px -50px;}
+.pieceSelected .val.n9{background-position:-450px -50px;}
+.pieceSelected .val.n10{background-position:-500px -50px;}
+
+/* levels 11-15 */
+.Bn0,.Bn1,.Bn2,.Bn3,.Bn4,.Bn5,.Bn6,.Bn7,.Bn8,.Bn9,.Bn10{
+	background-image:url(../images/numbers.png);
+	width:40px;
+	height:40px;
+	display:inline-block;
+	margin:1px 5px;
+	padding:0;
+}
+.piece .val.Bn0{background-position:0 -100px;}
+.piece .val.Bn1{background-position:-50px -100px;}
+.piece .val.Bn2{background-position:-100px -100px;}
+.piece .val.Bn3{background-position:-150px -100px;}
+.piece .val.Bn4{background-position:-200px -100px;}
+.piece .val.Bn5{background-position:-250px -100px;}
+.piece .val.Bn6{background-position:-300px -100px;}
+.piece .val.Bn7{background-position:-350px -100px;}
+.piece .val.Bn8{background-position:-400px -100px;}
+.piece .val.Bn9{background-position:-450px -100px;}
+.piece .val.Bn10{background-position:-500px -100px;}
+
+.pieceSelected .val.Bn0{background-position:0 -50px;}
+.pieceSelected .val.Bn1{background-position:-50px -150px;}
+.pieceSelected .val.Bn2{background-position:-100px -150px;}
+.pieceSelected .val.Bn3{background-position:-150px -150px;}
+.pieceSelected .val.Bn4{background-position:-200px -150px;}
+.pieceSelected .val.Bn5{background-position:-250px -150px;}
+.pieceSelected .val.Bn6{background-position:-300px -150px;}
+.pieceSelected .val.Bn7{background-position:-350px -150px;}
+.pieceSelected .val.Bn8{background-position:-400px -150px;}
+.pieceSelected .val.Bn9{background-position:-450px -150px;}
+.pieceSelected .val.Bn10{background-position:-500px -150px;}
+
+
+/* levels 16+ */
+.Cn0,.Cn1,.Cn2,.Cn3,.Cn4,.Cn5,.Cn6,.Cn7,.Cn8,.Cn9,.Cn10{
+	background-image:url(../images/numbers.png);
+	width:34px;
+	height:34px;
+	display:inline-block;
+	margin:1px 5px;
+	padding:0;
+}
+.piece .val.Cn0{background-position:0 -200px;}
+.piece .val.Cn1{background-position:-50px -200px;}
+.piece .val.Cn2{background-position:-100px -200px;}
+.piece .val.Cn3{background-position:-150px -200px;}
+.piece .val.Cn4{background-position:-200px -200px;}
+.piece .val.Cn5{background-position:-250px -200px;}
+.piece .val.Cn6{background-position:-300px -200px;}
+.piece .val.Cn7{background-position:-350px -200px;}
+.piece .val.Cn8{background-position:-400px -200px;}
+.piece .val.Cn9{background-position:-450px -200px;}
+.piece .val.Cn10{background-position:-500px -200px;}
+
+.pieceSelected .val.Cn0{background-position:0 -50px;}
+.pieceSelected .val.Cn1{background-position:-50px -250px;}
+.pieceSelected .val.Cn2{background-position:-100px -250px;}
+.pieceSelected .val.Cn3{background-position:-150px -250px;}
+.pieceSelected .val.Cn4{background-position:-200px -250px;}
+.pieceSelected .val.Cn5{background-position:-250px -250px;}
+.pieceSelected .val.Cn6{background-position:-300px -250px;}
+.pieceSelected .val.Cn7{background-position:-350px -250px;}
+.pieceSelected .val.Cn8{background-position:-400px -250px;}
+.pieceSelected .val.Cn9{background-position:-450px -250px;}
+.pieceSelected .val.Cn10{background-position:-500px -250px;}
+
+
+.pieceSelected .val{color:#FFF;}
+.row{text-align:center;display:block;}
+#panel{}
+#lvl,#ans,#cur,#rules,#getRules,#timer{
+	-webkit-box-shadow:#000 2px 2px 4px;
+	-moz-box-shadow:#000  2px 2px 4px;
+	-o-box-shadow:#000  2px 2px 4px;
+	}
+
+#lvl,#ans,#cur,#rules,#getRules{
+	font-family: 'Kreon', arial, serif;font-size:24px;position:absolute;
+	text-shadow: 4px 2px 6px #000;
+	color:#fff;padding:10px 40px 10px 15px;
+	background-image:url('../images/woodpanel.jpg');
+
+	}
+	
+	
+
+#lvl{top:0;width:110px;}
+#ans{top:55px;width:210px}
+#cur{top:110px;width:220px}
+#rules{
+	top:165px;
+	width:280px;
+	font-size:16px;
+	font-weight:bold;
+	padding:0px 9px 5px 12px;
+	
+}
+#getRules{
+position:absolute;
+top:165px;
+}
+
+#getRules:hover{color:yellow;cursor:pointer}
+#hideRules{position:absolute;right:0px;}
+#hideRules:hover{cursor:pointer}
+.slideOut,.slideIn,.fadeIn,.fadeOut{
+	-moz-transition:all .5s ease-out;
+	-webkit-transition:all .5s ease-in-out;
+	-ms-transition:all .5s ease-in-out;
+	-o-transition:all .5s ease-in-out;
+		}
+.slideOut{left:-500px;}
+.slideIn{left:-5px;}
+
+.fadeOut{opacity:0}
+.fadeIn{opacity:1;}
+.hide{display:none;}
+
+
+#rules a{color:#fff}
+#results {
+	z-index:1000;
+	font-family:Kreon, arial, serif;
+	text-align:center;
+	font-size:88px;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	color:#fff;
+	display:none;
+	text-shadow: 0px 0px 2px #000,
+				 0px 0px 6px #222,
+				 0px 0px 8px #000,
+				 0px 0px 12px #fff					 				 
+	;
+}
+
+#results sub{font-size:21px;}
+
+button{
+	background-image:url('../images/woodpanel.jpg');
+	margin:0px;
+	border:0px;
+	padding:5px;
+	color:white;
+	font-size:18px;
+	border-radius:5px;
+	-webkit-box-shadow:#000 0px 0px 6px;
+	-moz-box-shadow:#000  0px 0px 6px;
+	border:1px solid #000;
+	-moz-transition:all .2s ease-out;
+	-webkit-transition:all .2s ease-in-out;
+	-ms-transition:all .2s ease-in-out;
+	-o-transition:all .2s ease-in-out;
+}
+button:hover{
+	-webkit-box-shadow:#fff 0px 0px 4px;
+	-moz-box-shadow:#fff  0px 0px 4px;
+	}	
+
+
+#share{z-index:1001;}
+#canvas{
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0px;
+	left:0px;
+
+	}
+	
+#timer{
+	font-family: 'Kreon', arial, serif;font-size:24px;position:absolute;
+	z-index:-10;
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0px;
+	left:0px;
+	text-align:right;
+	font-size:18em;
+	color:rgba(0,0,0,0.3)
+}	
+
